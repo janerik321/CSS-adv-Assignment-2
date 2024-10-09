@@ -34,7 +34,11 @@
   );
 
   overflow: hidden;
-  border: 14px solid rgb(253, 253, 253);
+
+  border-left: 1vw solid rgb(253, 253, 253);
+  border-right: 1vw solid rgb(253, 253, 253);
+  border-top: 2vh solid rgb(253, 253, 253);
+  border-bottom: 2vh solid rgb(253, 253, 253);
 }
 
 /* ELEVATOR */
@@ -43,7 +47,7 @@
   width: 25vw;
   height: 65vh;
   background-color: dimgray;
-  margin: 0 0 -2vh 6vw;
+  margin: 0 0 -2vh 7vw;
 
   border: 0.7vw solid grey;
   border-bottom: 0;
@@ -54,7 +58,7 @@
   width: 100%;
 
   background-image: url("Images/elevator.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   display: flex;
 }
 
@@ -335,13 +339,13 @@
 /* WATER COOLER */
 
 #water-cooler {
-  width: 6vw;
+  width: 7vw;
   height: 50vh;
 
-  margin-left: 2vw;
+  margin-left: 1.8vw;
   margin-bottom: -9vh;
   background-image: url("Images/watercooler.png");
-  background-size: cover;
+  background-size: 270% 100%;
   background-repeat: no-repeat;
   background-position-x: 50%;
   animation-name: cooler-glow;
@@ -355,15 +359,15 @@
     filter: brightness(1);
   }
   to {
-    filter: brightness(1.1);
+    filter: brightness(1.12);
   }
 }
 
 #water {
-  width: 6%;
+  width: 5%;
   height: 0%;
   margin-top: 24.4vh;
-  margin-left: 58%;
+  margin-left: 59%;
   background-color: rgba(30, 144, 255, 0.4);
   transition-duration: 0ms;
   transition-timing-function: linear;
@@ -461,17 +465,17 @@
   position: absolute;
   bottom: 20vh;
   left: 47vw;
-  display: flex;
 }
 
 #cat-paw {
   width: 3.5vw;
   height: 1.7vh;
-  background-color: black;
+  background-color: white;
+  border: 0.16vw solid black;
   position: absolute;
   border-radius: 40%;
-  top: 25%;
-  left: -0.6vw;
+  top: 35%;
+  left: -0.59vw;
   animation-name: paw;
   animation-duration: 4s;
   animation-timing-function: linear;
@@ -481,10 +485,10 @@
 
 @keyframes paw {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(20deg);
   }
   84% {
-    transform: rotate(70deg);
+    transform: rotate(40deg);
   }
   88% {
     transform: rotate(0deg);
